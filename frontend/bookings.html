@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookings - TravelEase</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to TravelEase</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="trips.html">Trips</a>
+        <a href="bookings.html">Bookings</a>
+        <a href="reviews.html">Reviews</a>
+        <a href="admin.html">Admin</a>
+        <a href="login.html">Login/Signup</a>
+      </nav>
+    </header>
+    <main>
+      <h1>Manage Bookings</h1>
+      <form id="addBookingForm">
+        <input
+          type="number"
+          id="bookingClientId"
+          placeholder="Client ID"
+          required
+        />
+        <input
+          type="number"
+          id="bookingTripId"
+          placeholder="Trip ID"
+          required
+        />
+        <input type="date" id="bookingDate" required />
+        <button type="button" onclick="addBooking()">Add Booking</button>
+      </form>
+      <div id="bookingsList"></div>
+    </main>
+    <footer>
+      <p>&copy; 2024 TravelEase. All rights reserved.</p>
+    </footer>
+    <script src="scripts.js"></script>
+  </body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clients - TravelEase</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to TravelEase</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="clients.html">Clients</a>
+        <a href="trips.html">Trips</a>
+        <a href="bookings.html">Bookings</a>
+        <a href="reviews.html">Reviews</a>
+        <a href="admin.html">Admin</a>
+        <a href="login.html">Login/Signup</a>
+      </nav>
+    </header>
+    <main>
+      <h1>Manage Clients</h1>
+      <form id="addClientForm">
+        <input type="text" id="clientName" placeholder="Name" required />
+        <input type="email" id="clientEmail" placeholder="Email" required />
+        <input type="text" id="clientPhone" placeholder="Phone" />
+        <textarea id="clientAddress" placeholder="Address"></textarea>
+        <button type="button" onclick="addClient()">Add Client</button>
+      </form>
+      <div id="clientsList"></div>
+    </main>
+    <footer>
+      <p>&copy; 2024 TravelEase. All rights reserved.</p>
+    </footer>
+    <script src="scripts.js"></script>
+  </body>
+</html>

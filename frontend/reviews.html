@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reviews - TravelEase</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to TravelEase</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="trips.html">Trips</a>
+        <a href="bookings.html">Bookings</a>
+        <a href="reviews.html">Reviews</a>
+        <a href="admin.html">Admin</a>
+        <a href="login.html">Login/Signup</a>
+      </nav>
+    </header>
+    <main>
+      <h1>Submit and View Reviews</h1>
+      <form id="addReviewForm">
+        <input
+          type="number"
+          id="reviewClientId"
+          placeholder="Client ID"
+          required
+        />
+        <input type="number" id="reviewTripId" placeholder="Trip ID" required />
+        <input
+          type="number"
+          id="reviewRating"
+          placeholder="Rating (1-5)"
+          required
+        />
+        <textarea id="reviewComment" placeholder="Comment"></textarea>
+        <button type="button" onclick="addReview()">Submit Review</button>
+      </form>
+      <div id="reviewsList"></div>
+    </main>
+    <footer>
+      <p>&copy; 2024 TravelEase. All rights reserved.</p>
+    </footer>
+    <script src="scripts.js"></script>
+  </body>
+</html>
